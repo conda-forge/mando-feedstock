@@ -1,6 +1,6 @@
 {% set name = "mando" %}
-{% set version = "0.6.4" %}
-{% set sha256 = "79feb19dc0f097daa64a1243db578e7674909b75f88ac2220f1c065c10a0d960" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "539659d9a2fdc6c9a188211c58f381e0dafe9597085174c5472eb1ed0224b6b5" %}
 
 
 package:
@@ -18,7 +18,7 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
